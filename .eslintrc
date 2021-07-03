@@ -3,6 +3,9 @@
     "airbnb",
     "prettier"
   ],
+  "env": {
+    "jest": true
+  },
   "rules": {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
@@ -13,5 +16,12 @@
   },
   "parserOptions": {
     "ecmaVersion": 11
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
   }
 }
